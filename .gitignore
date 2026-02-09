@@ -1,0 +1,40 @@
+# Python/cache artifacts
+**/.venv/
+**/.uv-cache/
+**/__pycache__/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+
+# Experiment artifacts and datasets
+agentic_uncertainty/data/**
+agentic_uncertainty/cache/
+agentic_uncertainty/results/
+agentic_uncertainty/traj/
+agentic_uncertainty/trajectories/
+agentic_uncertainty/test_data/
+agentic_uncertainty/datasets/
+agentic_uncertainty/dataset/
+
+# Structured outputs and logs
+agentic_uncertainty/**/*.json
+agentic_uncertainty/**/*.jsonl
+agentic_uncertainty/**/*.csv
+agentic_uncertainty/**/*.traj
+**/*.log
+
+# Keep the fixed instance list for reproducibility
+!agentic_uncertainty/data/instances_final.json
+
+# Keep upstream SWE-bench Pro JSON/CSV assets and fixtures
+!SWE-bench_Pro-os/**/*.json
+!SWE-bench_Pro-os/**/*.csv
+!SWE-bench_Pro-os/**/*.jsonl
+
+# Local secrets
+**/.env
+**/.env.*
+!**/.env.example
+
+# OS/editor noise
+**/.DS_Store
